@@ -1,0 +1,20 @@
+name: continuous-migration
+version: 0.1
+license: BSD3
+maintainer: corentin.dupont@gmail.com
+synopsis: 
+description: 
+category: 
+Homepage: 
+build-type: Custom
+author: Corentin Dupont
+ 
+executable ContinuousMigration
+    build-depends: base, 
+                   previous-version
+    buildable: True
+    hs-source-dirs: src
+    other-modules: 
+    main-is: Main.hs
+    ghc-options: -W -threaded
+ 
