@@ -11,10 +11,12 @@ author: Corentin Dupont
  
 executable ContinuousMigration
     build-depends: base, 
-                   previous-version
+                   previous-version,
+                   cereal,
+                   safecopy
     buildable: True
     hs-source-dirs: src
-    other-modules: 
+    other-modules: Types, DataMigration
     main-is: Main.hs
     ghc-options: -W -threaded
  
