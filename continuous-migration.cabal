@@ -6,7 +6,7 @@ synopsis:
 description: 
 category: 
 Homepage: 
-build-type: Custom
+build-type: Simple
 author: Corentin Dupont
  
 executable ContinuousMigration
@@ -16,7 +16,7 @@ executable ContinuousMigration
                    safecopy
     buildable: True
     hs-source-dirs: src
-    other-modules: Types, DataMigration
+    other-modules: Types, TypesV0, TypesV1, DataMigration, Paths_continuous_migration
     main-is: Main.hs
     ghc-options: -W -threaded
  
